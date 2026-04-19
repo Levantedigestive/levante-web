@@ -11,127 +11,127 @@
         .bg-levante { background: linear-gradient(135deg, #1a8e85 0%, #2fa47d 100%); }
         .text-levante { color: #1a8e85; }
         html { scroll-behavior: smooth; }
-        /* Base de texto grande para accesibilidad sin exagerar espacios */
-        body { font-size: 1.1rem; line-height: 1.5; }
-        @media (min-width: 768px) { body { font-size: 1.25rem; } }
+        /* Texto base legible pero compacto (Reducción 50%) */
+        body { font-size: 1rem; line-height: 1.5; color: #1f2937; }
+        h2 { tracking: tight; }
     </style>
 </head>
-<body class="bg-slate-50 font-sans text-gray-900">
+<body class="bg-slate-50 font-sans">
 
-    <nav class="sticky top-0 bg-white shadow-lg z-50">
-        <div class="container mx-auto px-5 py-3 flex flex-col md:flex-row justify-between items-center gap-3">
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-1.5 flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center">
-                <img src="logo.png" alt="Levante Digestive Care" class="h-20 md:h-24 w-auto object-contain">
+                <img src="logo.png" alt="Levante Digestive Care" class="h-28 md:h-32 w-auto object-contain">
             </div>
-            <div class="flex space-x-4 text-xl font-black uppercase tracking-wider">
-                <button onclick="updateLang('en')" class="hover:text-levante p-2 bg-slate-100 rounded-lg transition">EN</button>
-                <button onclick="updateLang('es')" class="hover:text-levante p-2 bg-slate-100 rounded-lg transition">ES</button>
-                <button onclick="updateLang('fr')" class="hover:text-levante p-2 bg-slate-100 rounded-lg transition">FR</button>
-                <button onclick="updateLang('de')" class="hover:text-levante p-2 bg-slate-100 rounded-lg transition">DE</button>
+            <div class="flex space-x-3 text-lg font-bold uppercase tracking-wider">
+                <button onclick="updateLang('en')" class="hover:text-levante p-2 bg-slate-50 rounded transition">EN</button>
+                <button onclick="updateLang('es')" class="hover:text-levante p-2 bg-slate-50 rounded transition">ES</button>
+                <button onclick="updateLang('fr')" class="hover:text-levante p-2 bg-slate-50 rounded transition">FR</button>
+                <button onclick="updateLang('de')" class="hover:text-levante p-2 bg-slate-50 rounded transition">DE</button>
             </div>
         </div>
     </nav>
 
-    <header class="bg-levante text-white py-16 md:py-20 px-6 text-center">
-        <div class="container mx-auto max-w-5xl">
-            <h1 id="hero-title" class="text-5xl md:text-7xl font-black mb-6 italic leading-tight tracking-tight">Expert Digestive Care, <br>Seamlessly Managed.</h1>
-            <p id="hero-sub" class="text-2xl md:text-3xl mb-10 opacity-100 font-medium leading-normal max-w-3xl mx-auto">Your premium medical concierge in Spain. Connecting international patients with world-class specialists.</p>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                <a href="#contact" id="btn-contact" class="w-full md:w-auto bg-white text-levante px-10 py-4 rounded-xl font-black text-2xl shadow-xl hover:scale-105 transition">Contact Agent</a>
-                <a href="#services" id="btn-services" class="w-full md:w-auto border-4 border-white px-10 py-4 rounded-xl font-black text-2xl hover:bg-white hover:text-levante transition">Our Services</a>
+    <header class="bg-levante text-white py-8 md:py-10 px-4 text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h1 id="hero-title" class="text-3xl md:text-4xl font-black mb-4 italic leading-tight">Expert Digestive Care, <br>Seamlessly Managed.</h1>
+            <p id="hero-sub" class="text-lg md:text-xl mb-6 opacity-95 font-medium leading-snug max-w-2xl mx-auto">Your premium medical concierge in Spain. Connecting international patients with world-class specialists.</p>
+            <div class="flex justify-center items-center gap-3">
+                <a href="#contact" id="btn-contact" class="bg-white text-levante px-6 py-3 rounded-lg font-black text-xl shadow hover:scale-105 transition">Contact Agent</a>
+                <a href="#services" id="btn-services" class="border-2 border-white px-6 py-3 rounded-lg font-black text-xl hover:bg-white hover:text-levante transition">Services</a>
             </div>
         </div>
     </header>
 
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 id="title-how" class="text-4xl md:text-6xl font-black mb-12 text-gray-900 uppercase">How It Works</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-                <div class="p-2">
-                    <div class="text-levante text-7xl mb-4"><i class="fas fa-comments"></i></div>
-                    <h3 id="step1-t" class="text-2xl font-black mb-3">1. Contact Us</h3>
-                    <p id="step1-d" class="text-xl text-gray-700 font-medium leading-relaxed">Reach out via WhatsApp or email. We respond within 2 hours.</p>
+    <section class="py-10 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 id="title-how" class="text-3xl md:text-4xl font-black mb-8 text-gray-900 uppercase">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-2 border border-slate-100 rounded-lg">
+                    <div class="text-levante text-5xl mb-3"><i class="fas fa-comments"></i></div>
+                    <h3 id="step1-t" class="text-xl font-bold mb-2">1. Contact Us</h3>
+                    <p id="step1-d" class="text-lg text-gray-600 font-medium leading-relaxed">Reach out via WhatsApp or email. We respond within 2 hours.</p>
                 </div>
-                <div class="p-2">
-                    <div class="text-levante text-7xl mb-4"><i class="fas fa-hand-holding-medical"></i></div>
-                    <h3 id="step2-t" class="text-2xl font-black mb-3">2. Assessment</h3>
-                    <p id="step2-d" class="text-xl text-gray-700 font-medium leading-relaxed">Our concierge agents review your case and medical history.</p>
+                <div class="p-2 border border-slate-100 rounded-lg">
+                    <div class="text-levante text-5xl mb-3"><i class="fas fa-hand-holding-medical"></i></div>
+                    <h3 id="step2-t" class="text-xl font-bold mb-2">2. Assessment</h3>
+                    <p id="step2-d" class="text-lg text-gray-600 font-medium leading-relaxed">Our concierge agents review your case and history.</p>
                 </div>
-                <div class="p-2">
-                    <div class="text-levante text-7xl mb-4"><i class="fas fa-hospital-user"></i></div>
-                    <h3 id="step3-t" class="text-2xl font-black mb-3">3. Procedure</h3>
-                    <p id="step3-d" class="text-xl text-gray-700 font-medium leading-relaxed">Immediate access to top-tier clinics without waiting lists.</p>
+                <div class="p-2 border border-slate-100 rounded-lg">
+                    <div class="text-levante text-5xl mb-3"><i class="fas fa-hospital-user"></i></div>
+                    <h3 id="step3-t" class="text-xl font-bold mb-2">3. Procedure</h3>
+                    <p id="step3-d" class="text-lg text-gray-600 font-medium leading-relaxed">Immediate access to top-tier clinics without waiting.</p>
                 </div>
-                <div class="p-2">
-                    <div class="text-levante text-7xl mb-4"><i class="fas fa-language"></i></div>
-                    <h3 id="step4-t" class="text-2xl font-black mb-3">4. Support</h3>
-                    <p id="step4-d" class="text-xl text-gray-700 font-medium leading-relaxed">Receive translated reports and personalized assistance.</p>
+                <div class="p-2 border border-slate-100 rounded-lg">
+                    <div class="text-levante text-5xl mb-3"><i class="fas fa-language"></i></div>
+                    <h3 id="step4-t" class="text-xl font-bold mb-2">4. Support</h3>
+                    <p id="step4-d" class="text-lg text-gray-600 font-medium leading-relaxed">Receive translated reports and personalized assistance.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-16 bg-slate-100">
-        <div class="container mx-auto px-6">
-            <h2 id="title-services" class="text-4xl md:text-6xl font-black text-center mb-12 uppercase">Our Services</h2>
+    <section id="services" class="py-10 bg-slate-100">
+        <div class="container mx-auto px-4">
+            <h2 id="title-services" class="text-3xl md:text-4xl font-black text-center mb-8 uppercase">Our Services</h2>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
-                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-t-[10px] border-levante">
-                    <h3 id="serv-core" class="text-3xl font-black mb-6 flex items-center text-gray-900"><i class="fas fa-shield-alt text-levante mr-4"></i> Main Procedures</h3>
-                    <ul class="space-y-5 text-xl md:text-2xl text-gray-800">
-                        <li class="flex justify-between border-b-2 pb-3 font-bold italic">Gastroscopy <i class="fas fa-check-circle text-levante"></i></li>
-                        <li class="flex justify-between border-b-2 pb-3 font-bold italic">Colonoscopy <i class="fas fa-check-circle text-levante"></i></li>
-                        <li class="flex justify-between border-b-2 pb-3 font-bold italic">Esophageal Manometry <i class="fas fa-check-circle text-levante"></i></li>
-                        <li class="flex justify-between border-b-2 pb-3 font-bold italic">24h pH Metry <i class="fas fa-check-circle text-levante"></i></li>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-8 border-levante">
+                    <h3 id="serv-core" class="text-2xl font-bold mb-4 flex items-center text-gray-900"><i class="fas fa-shield-alt text-levante mr-3"></i> Main Procedures</h3>
+                    <ul class="space-y-3 text-lg text-gray-700">
+                        <li class="flex justify-between border-b pb-2 font-medium">Gastroscopy <i class="fas fa-check text-levante"></i></li>
+                        <li class="flex justify-between border-b pb-2 font-medium">Colonoscopy <i class="fas fa-check text-levante"></i></li>
+                        <li class="flex justify-between border-b pb-2 font-medium">Esophageal Manometry <i class="fas fa-check text-levante"></i></li>
+                        <li class="flex justify-between border-b pb-2 font-medium">24h pH Metry <i class="fas fa-check text-levante"></i></li>
                     </ul>
                 </div>
-                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-t-[10px] border-slate-400">
-                    <h3 id="serv-add" class="text-3xl font-black mb-6 flex items-center text-gray-900"><i class="fas fa-plus-circle text-gray-500 mr-4"></i> Extra Tests</h3>
-                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800">
-                        <li class="bg-slate-50 p-4 rounded-xl font-black text-xl border-2 border-slate-100">Anal Echo-endoscopy</li>
-                        <li class="bg-slate-50 p-4 rounded-xl font-black text-xl border-2 border-slate-100">Endoscopic Capsule</li>
-                        <li class="bg-slate-50 p-4 rounded-xl font-black text-xl border-2 border-slate-100">Abdominal Ultrasound</li>
-                        <li class="bg-slate-50 p-4 rounded-xl font-black text-xl border-2 border-slate-100">Breath Test (SIBO)</li>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-8 border-slate-400">
+                    <h3 id="serv-add" class="text-2xl font-bold mb-4 flex items-center text-gray-900"><i class="fas fa-plus-circle text-gray-500 mr-3"></i> Extra Tests</h3>
+                    <ul class="grid grid-cols-2 gap-3 text-gray-800">
+                        <li class="bg-slate-50 p-3 rounded font-bold text-base border">Anal Echo</li>
+                        <li class="bg-slate-50 p-3 rounded font-bold text-base border">Endo Capsule</li>
+                        <li class="bg-slate-50 p-3 rounded font-bold text-base border">Ultrasound</li>
+                        <li class="bg-slate-50 p-3 rounded font-bold text-base border">SIBO Test</li>
                     </ul>
                 </div>
             </div>
-            <p id="serv-note" class="text-center text-gray-600 font-bold italic text-2xl md:text-3xl">Please contact our team for personalized quotes.</p>
+            <p id="serv-note" class="text-center text-gray-600 font-bold italic text-xl md:text-2xl">Contact us for personalized quotes.</p>
         </div>
     </section>
 
-    <section class="py-16 bg-levante text-white">
-        <div class="container mx-auto px-6 max-w-5xl text-center">
-            <h2 id="title-about" class="text-4xl md:text-6xl font-black mb-10 uppercase">About Us</h2>
-            <p id="about-p1" class="text-2xl md:text-3xl font-medium leading-normal mb-6">
+    <section class="py-10 bg-levante text-white">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 id="title-about" class="text-3xl md:text-4xl font-black mb-6 uppercase">About Us</h2>
+            <p id="about-p1" class="text-lg md:text-xl font-medium leading-normal mb-4">
                 We are a premier medical concierge agency in Spain. We manage everything: from travel logistics to medical appointments.
             </p>
-            <p id="about-p2" class="text-2xl md:text-3xl font-medium leading-normal">
+            <p id="about-p2" class="text-lg md:text-xl font-medium leading-normal">
                 Our agents ensure clear communication and full translation of all medical documentation.
             </p>
         </div>
     </section>
 
-    <footer id="contact" class="bg-white py-16 border-t-8">
-        <div class="container mx-auto px-6 text-center">
-            <h2 id="title-contact" class="text-4xl md:text-5xl font-black mb-10 italic text-gray-900 uppercase">Contact Us Now</h2>
-            <div class="flex flex-col space-y-8 items-center mb-12">
-                <a href="https://wa.me/34624312293" target="_blank" class="flex items-center text-white bg-green-600 font-black text-3xl md:text-5xl px-10 py-6 rounded-2xl shadow-xl hover:scale-105 transition duration-300">
-                    <i class="fab fa-whatsapp mr-5 text-5xl md:text-7xl"></i> +34 624 312 293
+    <footer id="contact" class="bg-white py-10 border-t-8">
+        <div class="container mx-auto px-4 text-center">
+            <h2 id="title-contact" class="text-3xl md:text-4xl font-black mb-6 italic text-gray-900 uppercase">Contact Now</h2>
+            <div class="flex flex-col space-y-4 items-center mb-8">
+                <a href="https://wa.me/34624312293" target="_blank" class="flex items-center text-white bg-green-600 font-black text-2xl md:text-3xl px-6 py-4 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+                    <i class="fab fa-whatsapp mr-3 text-3xl md:text-5xl"></i> +34 624 312 293
                 </a>
-                <a href="mailto:info@levantedigestivecare.com" class="text-gray-700 font-black text-xl md:text-3xl underline decoration-levante decoration-4 offset-4">
+                <a href="mailto:info@levantedigestivecare.com" class="text-gray-700 font-bold text-lg md:text-xl underline decoration-levante offset-4">
                     info@levantedigestivecare.com
                 </a>
             </div>
-            <div class="flex justify-center space-x-12 text-6xl text-gray-300 mb-10">
+            <div class="flex justify-center space-x-10 text-5xl text-gray-200 mb-6">
                 <a href="https://www.instagram.com/levantedigestivecare" target="_blank" class="hover:text-pink-500 transition"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/share/14YR3Pxe3dx/" target="_blank" class="hover:text-blue-600 transition"><i class="fab fa-facebook"></i></a>
             </div>
-            <p class="text-lg text-gray-400 font-black uppercase tracking-widest">&copy; 2026 Levante Digestive Care</p>
+            <p class="text-base text-gray-400 font-bold uppercase tracking-widest">&copy; 2026 Levante Digestive Care</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/34624312293" target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white p-6 rounded-full shadow-2xl hover:scale-110 transition z-50">
-        <i class="fab fa-whatsapp text-5xl"></i>
+    <a href="https://wa.me/34624312293" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition z-50">
+        <i class="fab fa-whatsapp text-4xl"></i>
     </a>
 
     <script>
@@ -140,25 +140,25 @@
                 heroTitle: "Expert Digestive Care, <br>Seamlessly Managed.",
                 heroSub: "Your premium medical concierge in Spain. Connecting international patients with world-class specialists.",
                 btnContact: "Contact Agent",
-                btnServices: "Our Services",
+                btnServices: "Services",
                 titleHow: "How It Works",
                 step1T: "1. Contact Us", step1D: "Reach out via WhatsApp or email. We respond within 2 hours.",
                 step2T: "2. Assessment", step2D: "Our concierge agents review your case and medical history.",
-                step3T: "3. Procedure", step3D: "Immediate access to top-tier clinics without waiting lists.",
+                step3T: "3. Procedure", step3D: "Immediate access to top-tier clinics without waiting.",
                 step4T: "4. Support", step4D: "Receive translated reports and personalized assistance.",
                 titleServices: "Our Services",
                 servCore: "Main Procedures",
                 servAdd: "Extra Tests",
-                servNote: "Please contact our team for personalized quotes.",
+                servNote: "Contact us for personalized quotes.",
                 titleAbout: "About Us",
                 aboutP1: "We are a premier medical concierge agency in Spain. We manage everything: from travel logistics to medical appointments.",
                 aboutP2: "Our agents ensure clear communication and full translation of all medical documentation.",
-                titleContact: "Contact Us Now"
+                titleContact: "Contact Now"
             },
             es: {
                 heroTitle: "Salud Digestiva Experta, <br>Gestión Sin Complicaciones.",
                 heroSub: "Tu concierge médico premium en España. Conectando pacientes internacionales con especialistas de primer nivel.",
-                btnContact: "Contactar Agente",
+                btnContact: "Contactar",
                 btnServices: "Servicios",
                 titleHow: "Cómo Funciona",
                 step1T: "1. Contacto", step1D: "Escríbenos por WhatsApp o email. Respondemos en menos de 2 horas.",
@@ -168,49 +168,49 @@
                 titleServices: "Nuestros Servicios",
                 servCore: "Procedimientos Principales",
                 servAdd: "Pruebas Extra",
-                servNote: "Contacta con nosotros para presupuestos personalizados.",
+                servNote: "Contacta con nosotros para presupuestos.",
                 titleAbout: "Sobre Nosotros",
                 aboutP1: "Somos una agencia de concierge médico líder en España. Gestionamos todo: desde la logística de viaje hasta las citas médicas.",
-                aboutP2: "Nuestros agentes aseguran una comunicación clara y la traducción completa de toda la documentación médica.",
+                aboutP2: "Nuestros agentes aseguran una comunicación clara y la traducción completa de documentos.",
                 titleContact: "Contáctanos Ahora"
             },
             fr: {
                 heroTitle: "Soins Digestifs Experts, <br>Gérés Simplement.",
-                heroSub: "Votre conciergerie médicale premium en Espagne. Connecter les patients avec des spécialistes.",
-                btnContact: "Contacter Agent",
+                heroSub: "Votre conciergerie médicale premium en Espagne. Connecter les patients.",
+                btnContact: "Contact",
                 btnServices: "Services",
                 titleHow: "Comment ça Marche",
                 step1T: "1. Contact", step1D: "Contactez-nous via WhatsApp ou e-mail. Réponse sous 2 heures.",
                 step2T: "2. Évaluation", step2D: "Nos agents examinent votre cas et vos antécédents médicaux.",
                 step3T: "3. Procédure", step3D: "Accès immédiat aux meilleures cliniques sans attente.",
-                step4T: "4. Soutien", step4D: "Recevez des rapports traduits et une assistance personnalisée.",
+                step4T: "4. Soutien", step4D: "Recevez des rapports traduits et une assistance.",
                 titleServices: "Nos Services",
                 servCore: "Procédures",
                 servAdd: "Tests Extra",
-                servNote: "Veuillez nous contacter para des devis.",
+                servNote: "Veuillez nous contacter.",
                 titleAbout: "À Propos",
-                aboutP1: "Nous sommes une agence de conciergerie médicale en Espagne. Nous gérons tout.",
-                aboutP2: "Nos agents assurent une communication claire et la traduction de vos documents.",
+                aboutP1: "Nous somos une conciergerie médicale en Espagne. Nous gérons tout.",
+                aboutP2: "Nos agents assurent une communication claire.",
                 titleContact: "Contactez-Nous"
             },
             de: {
                 heroTitle: "Verdauungsexperten, <br>Einfach Organisiert.",
-                heroSub: "Ihr Medizin-Concierge in Spanien. Wir verbinden Sie mit den besten Spezialisten.",
+                heroSub: "Ihr Medizin-Concierge in Spanien. Wir verbinden Sie.",
                 btnContact: "Kontakt",
                 btnServices: "Leistungen",
                 titleHow: "So Funktioniert Es",
-                step1T: "1. Kontakt", step1D: "Per WhatsApp oder E-Mail. Wir antworten innerhalb von 2 Stunden.",
+                step1T: "1. Kontakt", step1D: "Per WhatsApp oder E-Mail. Wir antworten dentro de 2 horas.",
                 step2T: "2. Bewertung", step2D: "Unsere Concierges prüfen Ihre Krankengeschichte.",
                 step3T: "3. Behandlung", step3D: "Sofortiger Zugang zu Top-Kliniken ohne Wartezeit.",
                 step4T: "4. Betreuung", step4D: "Übersetzte Berichte und persönliche Unterstützung.",
                 titleServices: "Leistungen",
                 servCore: "Behandlungen",
                 servAdd: "Zusatztests",
-                servNote: "Kontaktieren Sie uns für individuelle Angebote.",
+                servNote: "Kontaktieren Sie uns.",
                 titleAbout: "Über Uns",
-                aboutP1: "Wir sind eine führende medizinische Concierge-Agentur in Spanien. Wir organisieren alles.",
-                aboutP2: "Unsere Agenten sorgen für klare Kommunikation und Übersetzungen.",
-                titleContact: "Kontaktieren Sie Uns"
+                aboutP1: "Wir sind eine führende medizinische Concierge-Agentur in Spanien.",
+                aboutP2: "Unsere Agenten sorgen für klare Kommunikation.",
+                titleContact: "Kontakt"
             }
         };
 
@@ -229,8 +229,8 @@
             document.getElementById('step4-t').innerText = content[lang].step4T;
             document.getElementById('step4-d').innerText = content[lang].step4D;
             document.getElementById('title-services').innerText = content[lang].titleServices;
-            document.getElementById('serv-core').innerHTML = `<i class="fas fa-shield-alt text-levante mr-4"></i> ` + content[lang].servCore;
-            document.getElementById('serv-add').innerHTML = `<i class="fas fa-plus-circle text-gray-500 mr-4"></i> ` + content[lang].servAdd;
+            document.getElementById('serv-core').innerHTML = `<i class="fas fa-shield-alt text-levante mr-3"></i> ` + content[lang].servCore;
+            document.getElementById('serv-add').innerHTML = `<i class="fas fa-plus-circle text-gray-500 mr-3"></i> ` + content[lang].servAdd;
             document.getElementById('serv-note').innerText = content[lang].servNote;
             document.getElementById('title-about').innerText = content[lang].titleAbout;
             document.getElementById('about-p1').innerText = content[lang].aboutP1;
